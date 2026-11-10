@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300"><defs><style>
+text{font-family:'Geist', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif}
+.serif{font-family:'Instrument Serif', Georgia, 'Times New Roman', serif}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(.2)}70%{opacity:1;transform:scale(1.15)}100%{opacity:1;transform:scale(1)}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes swing{0%{opacity:0;transform:translateY(40px) rotate(-6deg)}65%{opacity:1;transform:translateY(-6px) rotate(1.5deg)}100%{opacity:1;transform:none}}
+@keyframes ring{0%{opacity:.7;transform:scale(.3)}100%{opacity:0;transform:scale(2.2)}}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.anim{opacity:0;animation-fill-mode:both;animation-timing-function:cubic-bezier(.2,.8,.2,1)}
+.rise{animation-name:rise;animation-duration:.7s}
+.pop{animation-name:pop;animation-duration:.45s}
+.grow{transform-origin:bottom;transform-box:fill-box;animation-name:grow;animation-duration:.8s;opacity:1}
+.swing{animation-name:swing;animation-duration:.9s}
+.ring{transform-origin:center;transform-box:fill-box;animation:ring 2.4s ease-out infinite}
+.nudge{animation:nudge 1.8s ease-in-out infinite}
+.dot{animation:pulse 1.6s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){
+  .anim,.grow,.ring,.nudge,.dot{animation:none!important;opacity:1!important;transform:none!important}
+  .ring{opacity:0!important}
+}
+</style><linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="220" y2="0"><stop offset="0" stop-color="#17150f"/><stop offset=".38" stop-color="#17150f"/><stop offset=".5" stop-color="#2457f5"/><stop offset=".62" stop-color="#17150f"/><stop offset="1" stop-color="#17150f"/><animateTransform attributeName="gradientTransform" type="translate" values="-260 0;520 0;520 0" keyTimes="0;.35;1" dur="6s" begin="1.6s" repeatCount="indefinite"/></linearGradient></defs><rect width="900" height="300" rx="18" fill="#f6f1e7"/><rect x=".75" y=".75" width="898.5" height="298.5" rx="17.5" fill="none" stroke="#17150f" stroke-opacity=".15" stroke-width="1.5"/><text x="48" y="58" font-size="14" letter-spacing="2.5" fill="#7a7466" class="anim rise" style="animation-delay:0.00s"><tspan fill="#2457f5">BUILD</tspan>  /  <tspan fill="#e4472f">ACCOUNTS</tspan>  /  <tspan fill="#b98a00">LEARN</tspan></text><text x="48" y="160" font-size="92" class="serif anim rise" style="animation-delay:0.15s" fill="#17150f">Prashant</text><text x="48" y="248" font-size="92" class="serif anim rise" style="animation-delay:0.40s" fill="url(#shine)">Mishra</text><circle cx="540" cy="146" r="5" fill="#2457f5" class="dot"/><text x="556" y="152" font-size="17" fill="#17150f" class="anim rise" style="animation-delay:0.80s">Gorakhpur, Uttar Pradesh</text><text x="540" y="190" font-size="17" fill="#7a7466" class="anim rise" style="animation-delay:1.00s"><tspan x="540">Accountant &amp; store in-charge.</tspan><tspan x="540" dy="26">Self-taught builder in</tspan><tspan x="540" dy="26">Python and the web.</tspan></text></svg>
